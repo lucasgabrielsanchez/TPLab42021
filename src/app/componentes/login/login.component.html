@@ -1,0 +1,65 @@
+<div class="container">
+  <p-card [style]="{ width: '500px', height: '600px' }">
+    <div class="imgcontainer">
+      <img
+        src="./assets/imagenes/user.png"
+        alt="Avatar"
+        class="avatar"
+        max-width="104"
+      />
+    </div>
+    <div class="inputFormulario">
+      <label class="labelEdit">Usuario</label>
+      <input
+        id="username1"
+        type="username"
+        aria-describedby="username1-help"
+        pInputText
+        [(ngModel)]="usuario"
+        required
+      />
+    </div>
+    <div class="inputFormulario" style="margin-top: 30px">
+      <label class="labelEdit">Contraseña</label>
+      <input
+        id="password"
+        type="password"
+        aria-describedby="password-help"
+        pInputText
+        [(ngModel)]="clave"
+        required
+      />
+    </div>
+
+    <button
+      pButton
+      pRipple
+      type="button"
+      label="Ingresar"
+      style="margin-top: 50px"
+      class="p-button-outlined p-button-success"
+      (click)="Entrar()"
+    ></button>
+    <div class="p-d-flex p-jc-center">
+      <h5>
+        <b><u>Cargar Usuarios:</u></b>
+      </h5>
+    </div>
+    <div class="p-d-flex p-jc-center">
+      <button
+        pButton
+        pRipple
+        type="button"
+        label="Admin"
+        class="p-button-help"
+      ></button>
+      <button
+        pButton
+        pRipple
+        type="button"
+        label="Usuario"
+        class="p-button-help"
+      ></button>
+    </div>
+  </p-card>
+</div>
