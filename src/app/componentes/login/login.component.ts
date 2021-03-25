@@ -15,8 +15,16 @@ export class LoginComponent implements OnInit {
   ngOnInit() {}
 
   Entrar() {
-    if (this.usuario === 'admin' && this.clave === 'admin') {
-      this._router.navigate(['/Principal']);
+    if (
+      (this.usuario === 'admin' && this.clave === 'admin') ||
+      (this.usuario === 'usuario' && this.clave === 'usuario')
+    ) {
+      this._router.navigate(['/home']);
     }
+  }
+
+  cargarUsuario(test: string) {
+    this.usuario = test;
+    this.clave = test;
   }
 }

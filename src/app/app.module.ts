@@ -11,9 +11,11 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { CardModule } from 'primeng/card';
+import { HomeComponent } from './componentes/home/home.component';
+import { QuienSoyComponent } from './componentes/quien-soy/quien-soy.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent, HomeComponent, QuienSoyComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
