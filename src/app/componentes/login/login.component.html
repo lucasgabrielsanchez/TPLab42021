@@ -1,5 +1,5 @@
 <div class="container">
-  <p-card [style]="{ width: '500px', height: '600px' }">
+  <p-card [style]="{ width: '500px', height: '630px' }">
     <div class="imgcontainer">
       <img
         src="./assets/imagenes/user.png"
@@ -9,7 +9,7 @@
       />
     </div>
     <div class="inputFormulario">
-      <label class="labelEdit">Usuario</label>
+      <label class="labelEdit">Correo electrónico</label>
       <input
         id="username1"
         type="username"
@@ -52,7 +52,7 @@
         type="button"
         label="Admin"
         class="p-button-help"
-        (click)="cargarUsuario('admin')"
+        (click)="cargarUsuario('admin@hotmail.com','12345678')"
       ></button>
       <button
         pButton
@@ -60,8 +60,11 @@
         type="button"
         label="Usuario"
         class="p-button-help"
-        (click)="cargarUsuario('usuario')"
+        (click)="cargarUsuario('usuario@hotmail.com','87654321')"
       ></button>
+    </div>
+    <div class="p-d-flex p-jc-center">
+      <a [routerLink]="['/registro']">Registrarme</a>
     </div>
   </p-card>
 </div>

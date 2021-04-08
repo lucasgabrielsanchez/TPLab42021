@@ -1,0 +1,45 @@
+<p-toolbar>
+  <div class="p-toolbar-group-left left-toolbar-edit">
+    <div>
+      <h5 style="color: rgb(15, 201, 15); margin-top: 3px">
+        Lucas Gabriel Sanchez
+      </h5>
+    </div>
+
+    <div>
+      <i class="pi pi-chevron-right" style="color: rgb(15, 201, 15)"></i>
+    </div>
+    <div>
+      <a
+        pButton
+        class="p-button-info"
+        href="https://github.com/lucasgabrielsanchez"
+        target="_blank"
+        label="GitHub"
+        icon="fa fa-github"
+        iconPos="right"
+      ></a>
+    </div>
+    <div>
+      <button
+        routerLink="/quiensoy"
+        pButton
+        pRipple
+        type="button"
+        label="¿Quién soy?"
+        class="p-button-success"
+      ></button>
+    </div>
+  </div>
+
+  <div class="p-toolbar-group-right">
+    <button
+      pButton
+      pRipple
+      type="button"
+      label="Salir"
+      class="p-button-outlined p-button-danger"
+      routerLink="/login"
+    ></button>
+  </div>
+</p-toolbar>
